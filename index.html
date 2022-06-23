@@ -16,10 +16,15 @@
       <h4>My Really Cool Blog Post</h4>
     </div>
     <picture>
-      <source srcset="images/museum_640x320.jpeg" media="(min-width: 320px)">
-      <source srcset="images/museum_960x480.jpeg" media="(min-width: 640px)">
-      <source srcset="images/museum_1280x1280.jpeg" media="(min-width: 960px)">
-      <source srcset="images/museum_2400x2400.jpeg" media="(min-width: 1280px)">
+      <source srcset="images/museum_320.jpg,
+      images/museum_640.jpg 2x,
+      images/museum_960.jpg 3x" 
+      media="(max-width: 960px)">
+
+      <source srcset="images/museum_800x800.jpg,
+      images/museum_1600x1600.jpg 2x,
+      images/museum_2400x2400.jpg 3x" 
+      media="(min-width: 960px)">
       <img src="images/museum.jpg" alt="museum image">
   </picture>
 

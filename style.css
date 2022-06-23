@@ -31,14 +31,16 @@ h4 {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 960px) {
   .header {
     width: 100%;
   }
 
   img{
+    
     width: 100%;
   }
 }
@@ -51,6 +53,6 @@ img {
 
   img{
     width: 1fr;
-    height: width;
+    display: block;
   }
 }
